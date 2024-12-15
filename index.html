@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="home" class="page">
+            <a href="#page1">Metodologie AGILE</a>
+            <a href="#page2">Funzioni ricorsive</a>
+            <a href="#page3">Struct</a>
+        </div>
+    <div id="page1" class="page">
+        <a href="index.html">Torna alla home</a>
+        <h1 class="eckb-article-title">Metodologie Agile</h1>
+        <div id="eckb-article-content-body"><h2 class="wp-block-heading" data-id="articleTOC_0"><strong>I limiti del modello a cascata</strong></h2>
+            <p>L’approccio agile al lavoro è una metodologia che nasce per fare fronte ai limiti del modello a cascata, il <a href="https://cipiaceinfo.it/docs/progettazione/ingegneria-del-software/il-modello-waterfall/" data-type="epkb_post_type_1" data-id="468">Waterfall</a>.</p>
+            
+            
+            
+            <p>Come visto sopra il modello Waterfall, di fatto il principale modello di sviluppo fino alla fine del XX secolo, mostrava come le aziende più grandi avevano definito un processo di sviluppo del software strutturato come quello di una catena di montaggio. Il cliente, grande o piccolo, doveva adeguarsi al prodotto ed al processo, e non il software alle sue necessità. In pratica le aziende software sviluppavano progetti software che rispondevano a un insieme di requisiti generali validi per molti clienti diversi, molto rigidi perchè legati ai vincoli della progettazione, e che imponevano quindi ai clienti, anche in progetti “chiavi in mano”, la necessità di seguire sua rigide procedure di sviluppo (tempi contingentati) e quindi prodotti strutturati secondo le esigenze del fornitore del software e non del committente.&nbsp;</p>
+            
+            
+            
+            <p>Non solo i clienti ma tutti i team coinvolti (quindi progettisti, programmatori, designers, testers, ecc.) dovevano quindi adeguarsi alle modalità previste dall’azienda, adeguandosi ad essa e non viceversa. Questa modalità permette di far raggiungere alla azienda software i suoi obiettivi economici, ma questo significa anche avere software generico, al quale l’utente si deve adeguare, nei casi peggiori dovendo fare corsi, adeguando i propri flussi di lavoro, adattandosi alle sue evoluzioni. Allo stesso modo la qualità del software è strettamente legata al processo: il tempo per fare bugfix, migliorie, refactoring è dipendente dal tempo assegnato a quella fase, col risultato che il software può non avere una qualità adeguata, perchè è sottostimato il tempo di correzione dei difetti. </p>
+            
+            
+            
+            <p>Grazie all’avvento del web, che da una parte costituisce una nuova forma tecnologica del prodotto software e delle applicazioni “connesse” e dall’altra rende più semplice la comunicazione tra comunità di programmatori fino ad allora distanti, questo modello viene messo in discussione e si cominciano a proporre modelli alternativi.</p>
+            
+            
+            
+            <h2 class="wp-block-heading" data-id="articleTOC_1">Agile Manifesto</h2>
+            
+            
+            
+            <p>Tra questi il più importante è l'”agile manifesto”. E’ un documento scritto nel 2000 da un gruppo di informatici ingegneri e ricercatori. In questo documento gli autori evidenziano i problema sopra esposti ovvero che la rigidità della pianificazione dei cicli di sviluppo software Waterfall aveva fatto perdere di vista l’obiettivo principale del software, ovvero soddisfare necessità e bisogni.&nbsp;&nbsp;L’agile manifesto più che proporre un modello alternativo va piuttosto a definire quattro principi generali nello sviluppo software.</p>
+            
+            
+            
+            <p>– <strong>puntare agli individui e alle loro relazioni </strong>e mettere in secondo piano i processi;</p>
+            
+            
+            
+            <p>– dare priorità al <strong>software funzionante</strong> più che a specifiche corrette;</p>
+            
+            
+            
+            <p>– mettere al centro la <strong>collaborazione col committente</strong>, più che una contrattazione scritta;</p>
+            
+            
+            
+            <p>– dare <strong>priorità al cambiamento</strong> anzichè al piano iniziale di progetto.</p>
+            
+            
+            
+            <p>In altri termini, un processo agile non è rigido nè ha una pianificazione predeterminata ma si basa prima di tutto sulla negoziazione col cliente del prodotto da realizzare. Questo significa suddividere il progetto non in task ma in unità di tempo (“<strong>time-boxed</strong>“) nelle quali si produce un risultato. In quella unità di tempo il team di sviluppo analizza, l’attività da svolgere, la progetta, la realizza e la consegna al cliente che ne valuta il risultato. Viene quindi eliminato quello che è considerato uno “spreco di risorse” nelle fasi di analisi e documentazione, in virtù invece di un software funzionante e testato che “documenta se stesso”. </p>
+            
+            
+            
+            <p>Nel team inoltre, nell’ambito delle proprie competenze, ciascun soggetto ha una propria autonomia: il programmatore non riceve una specifica dettagliata, ma un perimetro di lavoro, l’analista riceve una specifica generica, il cliente stesso ha un ruolo nella verifica della qualità. in un processo agile tendenzialmente si riduce di molto la documentazione, e si tende invece ad automatizzare ed informatizzare le attività da svolgere, sotto forma di checklist o strutture analoghe. La collaborazione è infine in real time ed in generale la responsabilità del codice è collettiva (e non del solo responsabile tecnico verso il PM). </p>
+            
+            
+            
+            <p>Nello schema tipico agile il software stesso è un semilavorato dove si procede in uno sviluppo a cicli che non viene pianificato in base agli obiettivi da raggiungere (es. “ci vuole una settimana per fare questo task”) ma sono gli obiettivi che vengono scomposti in modo da essere realizzati in unità di tempo (es. “in una settimana possiamo fare il task a, b e c”).&nbsp;</p>
+            
+            
+            
+            <p>Il modello Agile è è stato prima adottato dalle piccole aziende di software e sebbene sia considerato “alternativo” si adatta meglio a progetti software “tailor made” dove il client anzichè comprare un progetto compra del tempo da parte della società di software, tempo che viene messo a disposizione per produrre insieme al cliente il prodotto finale. Anche le grandi aziende hanno introdotto l’Agile (senza eliminare Waterfall), perché permette di semplificare in molti casi le strutture organizzative e le rigidità di Waterfall, inoltre garantisce una collaborazione con team esterni per un software più modulare.&nbsp;</p>
+            
+            
+            
+            <p>La grande limitazione di Agile è che richiede competenza, mentalità ed una fase di allenamento: questo significa che richiede una formazione maggiore rispetto al modello Waterfall. Non è un modello senza rigidità, semplicemente sono spostate e suddivise in modo diverso.</p>
+            
+            
+            
+            <p>In ogni caso Waterfall non è stato abbandonato, anzi è e resta il modello più affidabile per determinati tipi di software, come i prodotti chiavi in mano.</p>
+            
+            
+            
+            <h2 class="wp-block-heading" data-id="articleTOC_2"><strong>Scrum</strong></h2>
+            
+            
+            
+            <p><strong>Scrum</strong> (“pacchetto di mischia” termine preso in prestito dal rugby) è il modello più famoso di sviluppo agile, o come dicono gli autori è un “framework”.</p>
+            
+            
+            
+            <p>All’interno di Scrum esistono tre figure:&nbsp;<strong>Product Owner</strong>,&nbsp;<strong>Scrum Master</strong>&nbsp;e i&nbsp;<strong>Developer (e analisti, tester, sistemisti)</strong>. Tutti insieme formano lo Scrum Team.</p>
+            
+            
+            
+            <p>Scrum è strutturato in cicli chiamati&nbsp;<strong>Sprint</strong>&nbsp;che durano da una a quattro settimane. I cicli sono timeboxed, il che significa che hanno durata fissa nel tempo,&nbsp;non possono essere estesi e terminano anche se il lavoro non è stato ultimato, questo implica che la pianificazione deve essere molto attenta su questo aspetto. Entro il termine dello Sprint&nbsp;il team rilascia un Increment, che deve sempre essere completo (Done) e rilasciabile all’utente finale. </p>
+            
+            
+            
+            <p>Per esempio, nel caso di una normale applicazione software potrebbe voler dire una&nbsp;funzionalità interamente integrata, funzionante e testata. </p>
+            
+            
+            
+            <p>Il team produce&nbsp;tre artefatti (deliverable).&nbsp;Essi sono:&nbsp;<strong>Product Backlog</strong>,&nbsp;<strong>Sprint Backlog</strong>&nbsp;e il software ovvero appunto l’<strong>Increment</strong>.&nbsp;Ogni artefatto include un “commitment”, ovvero un obiettivo finale. Questi commitment sono:</p>
+            
+            
+            
+            <ul class="wp-block-list">
+            <li><strong>Product Goal</strong>, che fa parte del Product Backlog e descrive uno stato futuro (possibilmente finale) del prodotto. Il Product Goal serve come obiettivo a lungo termine ma può essere cambiato nel singolo Sprint. Esso è descritto dal Product Backlog ed è formato da unità temporali dette Sprint (time boxed).</li>
+            
+            
+            
+            <li><strong>Sprint Goal</strong>, che è parte dello Sprint Backlog; descrive l’obiettivo da raggiungere nel singolo Sprint e definisce perchè aggiunge valore al prodotto finale. Un Product Goal è quindi il risultato di più Sprint.</li>
+            
+            
+            
+            <li><strong>Definiton of Done</strong>, che descrive quando un Increment (ovvero un incremento di software) raggiunge uno standard qualitativo adeguato a consentire il rilascio all’utente finale.&nbsp;</li>
+            </ul>
+            
+            
+            
+            <p>Il fine ultimo non è quindi completare il maggior numero di attività possibile, ma produrre incrementi di software completamente funzionanti e utilizzabili, attraverso il raggiungimento dello Sprint Goal. Questo obiettivo è concordato all’interno di tutto lo Scrum Team e non è stabilito a priori dal Product Owner.</p>
+            
+            
+            
+            <p>Altro aspetto fondamentale sono le riunioni, che sono le seguenti:</p>
+            
+            
+            
+            <ul class="wp-block-list">
+            <li><strong>Sprint Planning</strong>, che avviene all’inizio dello Sprint (o iterazione), qui si esegue la pianificazione.</li>
+            
+            
+            
+            <li><strong>Daily Scrum</strong>, una riunione giornaliera di 10-15 minuti in cui gli sviluppatori condividono le attività del giorno. Spesso per rendere la riunione più veloce si fa in piedi (“Standup meeting”).</li>
+            
+            
+            
+            <li><strong>Sprint Review</strong>, che chiude uno Sprint e dà l’occasione di ispezionare il lavoro svolto</li>
+            
+            
+            
+            <li><strong>Sprint Retrospective</strong>, ha la funzione di ispezionare i processi, le pratiche e altri aspetti legati alla collaborazione per migliorarli nello Sprint successivo.</li>
+            </ul>
+            
+            
+            
+            <p>Nel framework&nbsp;Scrum, l’intero team è auto organizzato e il team di sviluppo è cross funzionale, cioè tutti i dev possono mettere le mani su tutto il codice.</p>
+            
+            
+            
+            <p>Non esiste la figura del&nbsp;<strong>Project Manager</strong> al suo posto c’è lo Scrum Matser, che ha il compito di rimuovere&nbsp;ostacoli e impedimenti&nbsp;che esulano dai compiti del team, e in via eccezionale ha la facoltà&nbsp;di influenzare e cambiare i piani qualora si rendesse necessario. <br>È importante sottolineare come tutto ciò che viene pianificato&nbsp;all’inizio dell’iterazione può essere cambiato, ovvero si rivedono le specifiche ed il codice.Le uniche condizioni sono che i cambiamenti non vadano a influire negativamente sui livelli di qualità del prodotto o sullo Sprint Goal – che è fisso per tutta la durata del ciclo.</p>
+            
+            
+            
+            <p>Lo Sprint Review è invece un incontro informale in cui il team mostra il lavoro svolto al Product Owner. La Retrospective è un incontro successivo al termine del Review dove invece il team fa una analisi dello Sprint per migliorare i propri processi.</p>
+            
+            
+            
+            <p>Lo Scrum mostra quindi un approccio fortemente empirico: anzichè partire da una idea di sviluppare completamente prima di scrivere la prima riga di codice, si parte da un prodotto iniziale che viene effettivamente realizzato, e poi si costruiscono sia l’idea che il prodotto strada facendo, attraverso un processo di analisi ed adattamento alle esigenze che nel frattempo possono cambiare.&nbsp;</p>
+        </div>
+    </div>
+    <div id="page2" class="page">
+        <a href="index.html">Torna alla home</a>
+        <article id="eckb-article-content" data-article-id="127">                        <div id="eckb-article-content-header-v2"><div id="eckb-article-content-header-row-1"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-back-navigation-container"><div class="eckb-navigation-back  " style="margin-top: 4px; margin-right: 15px; margin-bottom: 4px; margin-left: 4px;"><div tabindex="0" class="eckb-navigation-button" style="padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; color: #037ba3; background-color: #ffffff; font-size:14px;border-radius: 3px; border-style: solid; border-width: 1px; border-color: #b5b5b5;" onclick="history.go(-1);">&lt; Home</div></div></div><div id="eckb-article-content-breadcrumb-container">
+            <div class="eckb-breadcrumb" style="padding-top: 0px; padding-right: 4px; padding-bottom: 0px; padding-left: 4px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size:14px;">		<nav class="eckb-breadcrumb-outline" aria-label="Breadcrumb">
+                    <ul class="eckb-breadcrumb-nav">       <li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/documentazione/"><span style="color: #037ba3;">Main</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/docs/category/programmazione/"><span style="color: #037ba3;">Programmazione</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/docs/category/programmazione/c/"><span style="color: #037ba3;">C/C++</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><span aria-current="page" style="color: #037ba3;">Funzioni ricorsive</span>	</span></li>		</ul>
+                </nav>
+            
+            </div>          </div></div><div class="eckb-article-content-header-row-right-group"><div id="eckb-article-content-toolbar-container">
+                    <div class="eckb-article-content-toolbar-button-container">
+                        <span class="eckb-print-button-container">			<span class="eckb-toolbar-button-text">Stampa</span><span class="eckb-toolbar-button-icon epkbfa epkbfa-print"></span>			</span>
+                    </div> </div></div></div><div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">Funzioni ricorsive</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading" id="block-590ec32b49144d698a8518c2df754849" data-id="articleTOC_0"><strong>La ricorsione</strong></h2>
+            
+            
+            
+            <p>Le funzioni ricorsive sono una classe di funzioni che prevedono nella loro definizione la chiamata a se stesse. L’obiettivo di queste funzioni è quello di semplificare o suddividere il set di informazioni ricevute come parametro e applicare la stessa funzione ai set suddivisi o semplificati. Questa tecnica viene chiamata&nbsp;<strong>ricorsione</strong>. Gli algoritmi che utilizzano questa tecnica vengono chiamati&nbsp;<strong>ricorsivi</strong>.</p>
+            
+            
+            
+            <p>Questo tipo di funzioni vengono definite suddividendo l’esecuzione della funzione in due macro casi:</p>
+            
+            
+            
+            <p>1)&nbsp;<strong>caso base</strong>: se il valore di input rispetta determinati requisiti, allora la funzione svolge il suo compito e restituisce quando previsto un risultato;</p>
+            
+            
+            
+            <p>2)&nbsp;<strong>caso generale</strong>: se non rispetta i suddetti requisiti, la funzione chiama se stessa con parametri eventualmente ed opportunamente modificati.</p>
+            
+            
+            
+            <p>Le funzioni di questo tipo hanno quindi un comportamento simile a quello di un ciclo, in cui la funzione viene continuamente richiamata fino a quando non si arriva al caso base, che come visto sopra non richiama la funzione. A questo punto si torna indietro, e viene via via completata l’esecuzione delle funzioni chiamanti.</p>
+            
+            
+            
+            <p>Nel diagramma sottostante uno schema di funzionamento generale di una funzione che chiama se stessa più volte fino ad arrivare ad un caso base.</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-d599c129988f4d7194e22031a1d9bd8d"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-6143344b-5a46-4800-880f-60ad168d0ff4-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-c3073bf853c24eb4bafcf06a0f1c28b2" data-id="articleTOC_1"><strong>Ambiti di applicazione</strong></h3>
+            
+            
+            
+            <p>Gli algoritmi ricorsivi offrono in generale una soluzione più sintetica ed elegante a problemi che prevedono cicli, in quanto spesso non richiedono di usare variabili per gestire contatori o indici, inoltre separano bene la condizione di terminazione del ciclo (cioè il caso base) dal ciclo stesso (cioè caso generale).</p>
+            
+            
+            
+            <p>La loro principale limitazione in C++ è che siccome le funzioni usano lo stack, un numero elevato di chiamate ricorsive a funzione va a riempirlo con un rischio di errore di “stack overflow”. Inoltre la creazione di una funzione (e la relativa distruzione) richiede tempo macchina col risultato di peggiorare le prestazioni (rispetto alla soluzione iterativa).</p>
+            
+            
+            
+            <p>Quindi in generale le funzioni ricorsive non sono usate per gestire cicli su grandi moli di dati o dove le prestazioni sono critiche. Tuttavia siccome questo è un limite di natura tecnica, con l’utilizzo di computer e memorie sempre più grandi questo problema si è complessivamente ridotto col tempo.</p>
+            
+            
+            
+            <h2 class="wp-block-heading" id="block-d7311b3dca2f4d54b61e008b356d1b9f" data-id="articleTOC_2"><strong>Fattoriale</strong></h2>
+            
+            
+            
+            <p>Come noto, la funzione&nbsp;<em>f(x) = n!</em>&nbsp;detta anche “fattoriale di n” è definita come</p>
+            
+            
+            
+            <p><em>f(x) = n*n-1*n-2*…*1 = n!</em></p>
+            
+            
+            
+            <p>Essa è cioè il prodotto di tutti gli interi che vanno da 1 a n. Essa può essere definita in modo ricorsivo in quanto è&nbsp;<em>n! = n*(n-1)!</em></p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input</em></td><td><em>Funzione</em></td><td><em></em></td></tr><tr><td><em>x=1</em></td><td><em>f(x)=1</em></td><td><em>Caso base</em></td></tr><tr><td><em>x&gt;1</em></td><td><em>f(x)=x * f(x-1)</em></td><td><em>Caso generale</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Proviamo a svolgere i passaggi per x = 5:</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input</em></td><td><em>Esecuzione allo step</em></td><td><em>Valore calcolato</em></td></tr><tr><td><em>5</em></td><td><em>f(5)= 5* f(4)</em></td><td><em>5 * f(4)</em></td></tr><tr><td><em>4</em></td><td><em>f(4)= 4* f(3)</em></td><td><em>5 * (4 * f(3))</em></td></tr><tr><td><em>3</em></td><td><em>f(3)= 3* f(2)</em></td><td><em>5 * (4 * (3 * f(2))</em></td></tr><tr><td><em>2</em></td><td><em>f(2)= 2* f(1)</em></td><td><em>5 * (4 * (3 * (2 * f(1)))</em></td></tr><tr><td><em>1</em></td><td><em>f(1)= 1</em></td><td><em>5 * (4 * (3 * (2 * 1)))</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Come si vede dallo svolgimento la funzione è chiama se stessa con un parametro che decresce di 1 fino a quando non si arriva al caso base (1).</p>
+            
+            
+            
+            <p>Qui una rappresentazione grafica. Si noti che in questo esempio tutte le funzioni sono deterministiche.</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-91ed7970107b4adaaa45d718b598b72e"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-24895d4d-2d8c-4755-be90-40420238cd95-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="1"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> n <span class="token operator">*</span> <span class="token function">f</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Inserisci un valore n<span class="token operator">:</span> “<span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+              <span class="token keyword">int</span> fact <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              cout <span class="token operator">&lt;&lt;</span> “Il fattoriale è<span class="token operator">:</span> “ <span class="token operator">&lt;&lt;</span> fact<span class="token punctuation">;</span>
+              <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;1&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-25c1bad2cb03464faf3be8fabf0e427f" data-id="articleTOC_3"><strong>Numeri di Fibonacci</strong></h3>
+            
+            
+            
+            <p>Come noto, la serie di Fibonacci è definita dalla seguente funzione generativa:</p>
+            
+            
+            
+            <p><em>f(1) -&gt; 1</em></p>
+            
+            
+            
+            <p><em>f(2) -&gt; 2</em></p>
+            
+            
+            
+            <p><em>f(n) -&gt; f(n-1) + f(n-2)</em></p>
+            
+            
+            
+            <p>In questo caso quindi la funzione ricorsiva è funzione di due chiamate ricorsive sommate tra loro.</p>
+            
+            
+            
+            <p>Proviamo a svolgerla per n=5:</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input</em></td><td><em>Esecuzione allo step</em></td><td><em>Valore finale</em></td></tr><tr><td><em>5</em></td><td><em>f(5)= f(4) + f(3)</em></td><td><em>f(4) + f(3)</em></td></tr><tr><td><em>4</em></td><td><em>f(4)= f(3) + f(2)</em></td><td><em>(f(3) + f(2)) + f(3)</em></td></tr><tr><td><em>3</em></td><td><em>f(3)= f(2) + f(1)</em></td><td><em>((f(2) + f(1)) + f(2)) + (f(2) + f(1))</em></td></tr><tr><td><em>2</em></td><td><em>f(2)= 1</em></td><td><em>((1 + 1) + 1) + (1 + 1)</em></td></tr><tr><td><em>1</em></td><td><em>f(1)= 1</em></td><td><em>5</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Qui una rappresentazione grafica.</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-966abb3bf1074ad0b261e1c499152238"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-1170133f-d4d5-43ca-8ecc-c434d343ec25-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <p>In C++ (si omette il main):</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="2"><span class="token keyword">int</span> <span class="token function">fibo</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span> 
+              <span class="token keyword">return</span> <span class="token function">fibo</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">fibo</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;2&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Analogamente si può procedere per la generazione di qualsiasi serie. Si può osservare che anche questa funzione è deterministica.</p>
+            
+            
+            
+            <h3 class="wp-block-heading" id="block-99e7247da86541029cf598db73c5e3c1" data-id="articleTOC_4"><strong>Verifica di un numero primo</strong></h3>
+            
+            
+            
+            <p>La funzione ricorsiva riceve come parametri il numero da verificare e un divisore e restituisce un valore booleano (true se primo, false se non primo).</p>
+            
+            
+            
+            <p>Essa ha dunque la seguente firma:</p>
+            
+            
+            
+            <p><code>bool f(int numero, int divisore)</code></p>
+            
+            
+            
+            <p>In questo caso quindi è funzione di due parametri, e la ricorsione avviene variando uno di essi (l’altro è costante).</p>
+            
+            
+            
+            <p>La possiamo implementare nel seguente modo:</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Numero</em></td><td><em>Condizioni</em></td><td><em>Risultato</em></td></tr><tr><td><em>1</em></td><td><em>n % d != 0</em></td><td><em>f(n, d-1)</em></td></tr><tr><td><em>2</em></td><td><em>n % d == 0</em></td><td><em>False</em></td></tr><tr><td><em>3</em></td><td><em>d == 1</em></td><td><em>True</em></td></tr><tr><td><em>4</em></td><td><em>n == 1</em></td><td><em>True</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Vediamo in dettaglio come funziona:</p>
+            
+            
+            
+            <ul class="wp-block-list" id="block-1dcfa16eecac44fdaed840b1985a08f1">
+            <li>La condizione 1 è quella generale, ovvero quella in cui n non è divisibile per d, in questo caso viene eseguita la funzione passando n e d-1;</li>
+            
+            
+            
+            <li>La condizione 2 è quella in cui n è divisibile per d, quindi l’esecuzione si ferma perché il numero non è primo;</li>
+            
+            
+            
+            <li>La condizione 3 è il punto di arrivo se la condizione 2 non viene mai soddisfatta;</li>
+            
+            
+            
+            <li>La condizione 4 è il caso in cui n ha un valore pari ad 1;</li>
+            
+            
+            
+            <li>La funzione viene chiamata la prima volta con il massimo divisore possibile, cioè n-1;</li>
+            
+            
+            
+            <li>Anche in questo caso la funzione è deterministica.</li>
+            </ul>
+            
+            
+            
+            <p>Proviamo a vedere un esempio con n =&gt; 5 e d = (n-1) =&gt; 4. Il risultato atteso è true.</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input (n, d)</em></td><td><em>Esecuzione allo step</em></td></tr><tr><td><em>(5,4)</em></td><td><em>f(5,4)= f(5,3)</em></td></tr><tr><td><em>(5,3)</em></td><td><em>f(5,3)= f(5,2)</em></td></tr><tr><td><em>(5,2)</em></td><td><em>f(5,2)= f(5,1</em></td></tr><tr><td><em>(5,1)</em></td><td><em>f(5,1)= true</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Graficamente:</p>
+            
+            
+            
+            <p>Ora un esempio con n=10 che restituisce false.</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input (n, d)</em></td><td><em>Esecuzione allo step</em></td></tr><tr><td><em>(10,9)</em></td><td><em>f(10,9)= f(10,8)</em></td></tr><tr><td><em>(10,8)</em></td><td><em>f(10,8)= f(10,7)</em></td></tr><tr><td><em>(10,7)</em></td><td><em>f(10,7)= f(10,6)</em></td></tr><tr><td><em>(10,6)</em></td><td><em>f(10,6)= f(10,5)</em></td></tr><tr><td><em>(10,5)</em></td><td><em>f(10,5)= false</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Graficamente:</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-5543171c272d4b41bab4143985fa26de"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-19d46761-a82a-470a-ab38-b43c7809b298-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <p>In codice C++:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="3"><span class="token keyword">bool</span> <span class="token function">isPrime</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> d<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>d <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">%</span> d <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token function">isPrime</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> d<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;3&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <h3 class="wp-block-heading" data-id="articleTOC_5"><strong>Fibonacci con array</strong></h3>
+            
+            
+            
+            <p>In questo caso viene richiesto di generare un array contenente tutti i primi n numeri di Fibonacci.</p>
+            
+            
+            
+            <p>Siccome in C++ per modificare un array questo deve essere passato come parametro, possiamo definire la funzione con la seguente firma:</p>
+            
+            
+            
+            <p>void f(int i, int a[])</p>
+            
+            
+            
+            <p>Dove&nbsp;<em>i</em>&nbsp;è il numero i-esimo della serie di Fibonacci e&nbsp;<em>a</em>&nbsp;è l’array&nbsp;<em>[x1, x2, …, xn])&nbsp;</em>dove inseriremo i valori.</p>
+            
+            
+            
+            <p>La funzione non è deterministica in quanto non viene restituito un valore ma viene modificato lo stesso array.</p>
+            
+            
+            
+            <p>La sua implementazione è la seguente:</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Funzione</em></td><td><em>Condizioni</em></td><td><em>Azione</em></td></tr><tr><td><em>f(i,a)</em></td><td><em>i&lt;2</em></td><td><em>a[0]=1; a[1]=1</em></td></tr><tr><td><em>f(i,a)</em></td><td><em>i&gt;=2</em></td><td><em>f(i-1, a);a[i]=a[i-1]+a[i-2]</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>In dettaglio:</p>
+            
+            
+            
+            <ul class="wp-block-list" id="block-1db8d2dd7fad46a18d5d1037f3eaeeb5">
+            <li>Per i&lt;2 (quindi 1 o 0): è il caso base;</li>
+            
+            
+            
+            <li>Per i&gt;=2: è il caso generale. Qui la funzione prima genera i valori precedenti nell’array e poi genera quello attuale.</li>
+            </ul>
+            
+            
+            
+            <p>Vediamo un esempio di esecuzione con n=5 e a[] con 5 elementi.</p>
+            
+            
+            
+            <figure class="wp-block-table"><table><tbody><tr><td><em>Input</em></td><td><em>Esecuzione</em></td></tr><tr><td><em>f(5, a)</em></td><td><em>f(4, a);&nbsp;</em><em>a[4]=a[3]+a[2]</em></td></tr><tr><td><em>f(4, a)</em></td><td><em>f(3, a);</em><em>a[3]=a[2]+a[1]</em></td></tr><tr><td><em>f(3, a)</em></td><td><em>f(2, a);</em><em>a[2]=a[2]+a[1]</em></td></tr><tr><td><em>f(2, a)</em></td><td><em>a[0]=1; a[1]=1;</em></td></tr></tbody></table></figure>
+            
+            
+            
+            <p>Graficamente:</p>
+            
+            
+            
+            <figure class="wp-block-image" id="block-37d71f83445842a681fc18d6aa756f09"><img decoding="async" src="https://imagedelivery.net/IEMzXmjRvW0g933AN5ejrA/wwwnotionso-image-prod-files-secures3us-west-2amazonawscom-54c12d55-229f-4c83-b4b6-dd7d262e4443-2e32ecf2-b397-4245-9f64-b55d1020f536-untitledpng/public" alt="notion image"></figure>
+            
+            
+            
+            <p>Codice C++:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="4"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">void</span> <span class="token function">fibo</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">,</span> <span class="token keyword">int</span> result<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+                result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token function">fibo</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                result<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>result<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>result<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+              <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+              cout<span class="token operator">&lt;&lt;</span><span class="token string">"Inserisci n:"</span><span class="token punctuation">;</span>
+              cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+              <span class="token keyword">int</span> list<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
+              <span class="token function">fibo</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                cout <span class="token operator">&lt;&lt;</span> list<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+              <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;4&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            </div><div id="eckb-article-content-footer">
+                    <div class="epkb-article-navigation-container ">            				<div class="epkb-article-navigation__previous"> <a href="https://cipiaceinfo.it/docs/programmazione/c/manipolazione-di-stringhe/" rel="prev">
+                                <span class="epkb-article-navigation__label">
+                                    <span class="epkb-article-navigation__label__previous__icon epkbfa epkbfa-caret-left"></span>
+                                    Precedente
+                                </span>
+                                <span title="Manipolazione di stringhe" class="epkb-article-navigation-article__title">
+                                    <span class="epkb-article-navigation__previous__icon epkbfa ep_font_icon_document"></span>
+                                    Manipolazione di stringhe
+                                </span>
+                            </a>				</div>  				<div class="epkb-article-navigation__next"><a href="https://cipiaceinfo.it/docs/programmazione/c/visibilita-delle-variabili/" rel="next">
+                                <span class="epkb-article-navigation__label">
+                                    Successivo
+                                    <span class="epkb-article-navigation__label__next__icon epkbfa epkbfa-caret-right"></span>
+                                </span>
+                                <span title="Visibilità delle variabili" class="epkb-article-navigation-article__title">
+                                    Visibilità delle variabili
+                                    <span class="epkb-article-navigation__next__icon epkbfa ep_font_icon_document"></span>
+                                </span>
+                            </a>
+                                           </div>  
+                    </div>        </div>
+                            </article>
+    </div>
+    <div id="page3" class="page">
+        <a href="index.html">Torna alla home</a>
+        <article id="eckb-article-content" data-article-id="149">                        <div id="eckb-article-content-header-v2"><div id="eckb-article-content-header-row-1"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-back-navigation-container"><div class="eckb-navigation-back  " style="margin-top: 4px; margin-right: 15px; margin-bottom: 4px; margin-left: 4px;"><div tabindex="0" class="eckb-navigation-button" style="padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; color: #037ba3; background-color: #ffffff; font-size:14px;border-radius: 3px; border-style: solid; border-width: 1px; border-color: #b5b5b5;" onclick="history.go(-1);">&lt; Home</div></div></div><div id="eckb-article-content-breadcrumb-container">
+            <div class="eckb-breadcrumb" style="padding-top: 0px; padding-right: 4px; padding-bottom: 0px; padding-left: 4px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size:14px;">		<nav class="eckb-breadcrumb-outline" aria-label="Breadcrumb">
+                    <ul class="eckb-breadcrumb-nav">       <li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/documentazione/"><span style="color: #037ba3;">Main</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/docs/category/programmazione/"><span style="color: #037ba3;">Programmazione</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><a tabindex="0" href="https://cipiaceinfo.it/docs/category/programmazione/c/"><span style="color: #037ba3;">C/C++</span></a><span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>	</span></li><li style="font-size:14px;">	<span class="eckb-breadcrumb-link"><span aria-current="page" style="color: #037ba3;">Struct</span>	</span></li>		</ul>
+                </nav>
+            
+            </div>          </div></div><div class="eckb-article-content-header-row-right-group"><div id="eckb-article-content-toolbar-container">
+                    <div class="eckb-article-content-toolbar-button-container">
+                        <span class="eckb-print-button-container">			<span class="eckb-toolbar-button-text">Stampa</span><span class="eckb-toolbar-button-icon epkbfa epkbfa-print"></span>			</span>
+                    </div> </div></div></div><div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">Struct</h1></div></div></div></div><div id="eckb-article-content-body"><p>La Struct permette di collegare tra loro informazioni in una unica struttura dati e memorizzarla in una variabile. </p>
+            
+            
+            
+            <p>Ad esempio con una struct possiamo connettere i dati anagrafici di una persona (nome, cognome, età, eccPoniamo ad esempio di voler creare una struttura dati che associa uno studente a un nome, cognome e voto. Creiamo poi un programma che legge da tastiera i voti di un certo numero di studenti scelto dall’utente e salva il tutto su un file.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-cpp" data-lang="C++"><code class=" language-cpp" data-hcb-clip="1"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            
+            <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+            
+            <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+            
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token macro property">#<span class="token directive keyword">define</span> LEN 20</span>
+            
+            <span class="token keyword">typedef</span> <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+            
+                <span class="token keyword">char</span> nome<span class="token punctuation">[</span>LEN<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">char</span> cognome<span class="token punctuation">[</span>LEN<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                 <span class="token keyword">int</span> voto<span class="token punctuation">;</span>
+            
+            <span class="token punctuation">}</span> Studente<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            
+            <span class="token punctuation">{</span>
+            
+                <span class="token keyword">int</span> numero_alunni<span class="token punctuation">;</span>
+            
+                cout<span class="token operator">&lt;&lt;</span><span class="token string">"Inserisci il numero di alunni: "</span><span class="token punctuation">;</span>
+            
+                cin <span class="token operator">&gt;&gt;</span> numero_alunni<span class="token punctuation">;</span>
+            
+                Studente studenti<span class="token punctuation">[</span>numero_alunni<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>numero_alunni<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"alunno: "</span> <span class="token operator">&lt;&lt;</span> i<span class="token operator">+</span><span class="token number">1</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Nome: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>nome<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Cognome: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>cognome<span class="token punctuation">;</span>
+            
+                    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Voto: "</span><span class="token punctuation">;</span>
+            
+                    cin <span class="token operator">&gt;&gt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>voto<span class="token punctuation">;</span>
+            
+                <span class="token punctuation">}</span>
+            
+                ofstream <span class="token function">file</span><span class="token punctuation">(</span><span class="token string">"studenti.csv"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>numero_alunni<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            
+                    file <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>nome <span class="token operator">&lt;&lt;</span> <span class="token string">","</span> <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>cognome <span class="token operator">&lt;&lt;</span> <span class="token string">","</span> <span class="token operator">&lt;&lt;</span> studenti<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>voto <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            
+                <span class="token punctuation">}</span>
+            
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            
+            <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;1&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Vediamo in dettaglio come funziona la struct:</p>
+            
+            
+            
+            <p>– prima di tutto si usa una dichiarazione&nbsp;<strong>typedef struct {… }</strong>&nbsp;per definire la struttura, dove ogni elemento è definito da nome e tipo e viene chiamato proprietà. Al termine del blocco si da un nome al tipo di dato (si suggerisce l’iniziale maiuscola);&nbsp;</p>
+            
+            
+            
+            <p>– l’operatore&nbsp;<strong>.</strong>&nbsp;permette di accedere alla singola proprietà di un oggetto di tipo struct.</p>
+            
+            
+            
+            <p>E’ anche possibile effettuare l’assegnazione rapida:</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-plain"><code class=" language-plain" data-hcb-clip="2">typedef struct {
+            
+              char nome[LEN];
+            
+              char cognome[LEN];
+            
+              int voto;
+            
+            } Studente;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;2&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p><strong>Studente studente1 = {“Mario”, “Rossi”, 6};</strong></p>
+            
+            
+            
+            <p><strong>Strutture e funzioni</strong></p>
+            
+            
+            
+            <p>Le strutture sono tipi di dato memorizzati localmente (quindi nello stack). Cosa succede però se voglio modificare una struttura usando una funzione? Si può usare il solito operatore &amp; ma non basta.</p>
+            
+            
+            
+            <p>Vediamo un esempio completo.</p>
+            
+            
+            
+            <div class="hcb_wrap"><pre class="prism line-numbers  language-plain"><code class=" language-plain" data-hcb-clip="3">#include &lt;iostream&gt;
+            
+            #include &lt;string.h&gt;
+            
+            #include &lt;fstream&gt;
+            
+            using namespace std;
+            
+            #define LEN 20
+            
+            typedef struct {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;char nome[LEN];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;char cognome[LEN];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float italiano;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float storia;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float matematica;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float media;
+            
+            } Studente;
+            
+            void calcola_media(Studente *stud) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;stud-&gt;media = (stud-&gt;italiano + stud-&gt;storia + stud-&gt;matematica) / 3;
+            
+            }
+            
+            int main()
+            
+            {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;int numero_alunni;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"Inserisci il numero di alunni: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; numero_alunni;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;Studente studenti[numero_alunni];
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;for (int i=0; i&lt;numero_alunni; i++) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "alunno: " &lt;&lt; i+1 &lt;&lt; endl;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Nome: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].nome;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Cognome: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].cognome;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Italiano: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].italiano;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Storia: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].storia;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "Matematica: ";
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; studenti[i].matematica;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcola_media(&amp;studenti[i]);
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;}
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;ofstream file("studenti.csv");
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;for (int i=0; i&lt;numero_alunni; i++) {
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file &lt;&lt; studenti[i].nome &lt;&lt; "," &lt;&lt; studenti[i].cognome &lt;&lt; "," &lt;&lt; studenti[i].media &lt;&lt; endl;
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;}
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;return 0;
+            
+            }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><button class="hcb-clipboard" data-clipboard-target="[data-hcb-clip=&quot;3&quot;]" data-clipboard-action="copy" aria-label="Copy code to clipboard"></button></div>
+            
+            
+            
+            <p>Come si può vedere si richiama la funzione usando l’operatore &amp;. La funzione quindi opera su un puntatore studente*. Per accedere alle proprietà si può quindi procedere in due modi:</p>
+            
+            
+            
+            <p>1) Risolvendo il puntatore: ad esempio con&nbsp;<strong>(*stud).nome</strong></p>
+            
+            
+            
+            <p>2) Usando l’operatore&nbsp;<strong>-&gt;</strong>: ad esempio con&nbsp;<strong>stud-&gt;nome</strong>, che è la forma usata con l’esempio.</p>
+            </div><div id="eckb-article-content-footer">
+                    <div class="epkb-article-navigation-container ">            				<div class="epkb-article-navigation__previous"> <a href="https://cipiaceinfo.it/docs/programmazione/c/gestione-files/" rel="prev">
+                                <span class="epkb-article-navigation__label">
+                                    <span class="epkb-article-navigation__label__previous__icon epkbfa epkbfa-caret-left"></span>
+                                    Precedente
+                                </span>
+                                <span title="Gestione files" class="epkb-article-navigation-article__title">
+                                    <span class="epkb-article-navigation__previous__icon epkbfa ep_font_icon_document"></span>
+                                    Gestione files
+                                </span>
+                            </a>				</div>  
+                    </div>        </div>
+                            </article>
+    </div>
+ </div>
+</body>
+<script src="script.js" type="module"></script>
+</html>
